@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <title>多级选择</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <link href="https://cdn.bootcdn.net/ajax/libs/twitter-bootstrap/4.5.3/css/bootstrap.min.css" rel="stylesheet">
+    <link href="jquery.treeSelection.css" rel="stylesheet">
+<body>
+<div class="container">
+    <div class="card">
+        <div class="card-header p-2 bg-info">
+            多级选择
+        </div>
+        <div class="card-img p-3">
+            <div class="input-group mb-3">
+                <div class="input-group-prepend">
+                    <label class="input-group-text">选择</label>
+                </div>
+                <select name="mySelect1" class="custom-select">
+                    <optgroup label="Alaskan/Hawaiian Time Zone">
+                        <option value="AK">Alaska</option>
+                        <option value="HI">Hawaii</option>
+                    </optgroup>
+                    <optgroup label="Pacific Time Zone">
+                        <option value="CA">California</option>
+                        <option value="NV">Nevada</option>
+                        <option value="OR">Oregon</option>
+                        <option value="WA">Washington</option>
+                    </optgroup>
+                    <optgroup label="Mountain Time Zone">
+                        <option value="AZ">Arizona</option>
+                        <option value="CO">Colorado</option>
+                        <option value="ID">Idaho</option>
+                        <option value="MT">Montana</option><option value="NE">Nebraska</option>
+                        <option value="NM">New Mexico</option>
+                        <option value="ND">North Dakota</option>
+                        <option value="UT">Utah</option>
+                        <option value="WY">Wyoming</option>
+                    </optgroup>
+                </select>
+                <select name="mySelect2" class="custom-select"></select>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+<script type="application/javascript" src="https://cdn.bootcdn.net/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script type="application/javascript" src="jquery.treeSelection.js"></script>
+<script type="application/javascript">
+$('select[name=mySelect1]').treeSelection();
+$('select[name=mySelect2]').treeSelection({
+    multiple: 3,
+    data: [{
+        name: '北京',
+        items: [{
+            name: '东城区',
+            items: ['天坛','王府井']
+        },{
+            name: '西城区',
+            items: ['西单','天安门']
+        }]
+    }, {
+        name: '天津',
+        items: [{
+            name: '河北区',
+            items: ['东站','民权门']
+        },{
+            name: '和平区',
+            items: ['劝业场','滨江道']
+        }]
+    }, {
+        name: '河北',
+        items: ['石家庄','唐山','秦皇岛']
+    }]
+});
+</script>
+</html>
