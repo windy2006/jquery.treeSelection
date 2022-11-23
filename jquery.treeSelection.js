@@ -7,6 +7,8 @@
  *
  * Licensed under the Apache License Version 2.0
  *
+ * Release at https://github.com/windy2006/jquery.treeSelection
+ *
  * Dependencies
  * ------------
  * jQuery (http://jquery.com)
