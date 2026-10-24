@@ -9,9 +9,10 @@
 下载并复制 jquery.treeSelection.js，jquery.treeSelection.css 到网站目录，同时也需要事先准备好 jQuery 和 bootstrap 框架。
 
 ```html
-<link href="https://cdn.bootcdn.net/ajax/libs/twitter-bootstrap/4.5.3/css/bootstrap.min.css" rel="stylesheet">
+<link href="vendor/bootstrap-5.3.8.min.css" rel="stylesheet">
+<link href="vendor/original-theme.css" rel="stylesheet">
 <link href="/path/to/jquery.treeSelection.css" rel="stylesheet">
-<script type="text/javascript" src="https://cdn.bootcdn.net/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script type="text/javascript" src="vendor/jquery-4.0.0.min.js"></script>
 <script type="text/javascript" src="/path/to/jquery.treeSelection.js"></script>
 ```
 
@@ -58,3 +59,8 @@ $(selectObj).treeSelection(options);
 ```
 
 本插件调用比较简单，更多可参考 [演示页面](https://windy2006.github.io/jquery.treeSelection/)
+## 2026-10-24 更新
+
+保留原 jQuery 插件接口与样例主体，示例使用本地 jQuery 4.0.0、Bootstrap 5.3.8。`vendor/original-theme.css` 维持原示例的布局外观；上游许可证随依赖保留。
+
+本地预览：在仓库目录运行 `python3 -m http.server 8765`，打开 http://localhost:8765/。
