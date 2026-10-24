@@ -7,5 +7,3 @@
 - 保留原生 select 作为表单数据源，同步初始 selected、外部 `.val(...).trigger('change')`、reset、disabled 和标签删除；多选字段维持 `name[]` 约定。
 - 重复初始化会清理旧实例；新增 `.treeSelection('destroy')`，清理监听、观察器、控件并还原名称、multiple 和样式。
 - 触发按钮支持 Enter/空格与 Escape；没有改变原有列表 CSS。自定义数据中的名称统一按普通文本显示，已有依赖选项富文本的调用需改为单独受控渲染。
-
-验证方式与范围见 [tests/README.md](tests/README.md)。

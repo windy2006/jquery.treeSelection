@@ -61,10 +61,8 @@ $(selectObj).treeSelection(options);
 本插件调用比较简单，更多可参考 [演示页面](https://windy2006.github.io/jquery.treeSelection/)
 ## 2026-10-24 更新
 
-保留原 jQuery 插件接口与样例主体，示例使用本地 jQuery 4.0.0、Bootstrap 5.3.8。`vendor/original-theme.css` 维持原示例的布局外观；上游许可证随依赖保留。
-
-本地预览：在仓库目录运行 `python3 -m http.server 8765`，打开 http://localhost:8765/。
+保留原 jQuery 插件接口与样例主体，示例使用 jQuery 4.0.0、Bootstrap 5.3.8。`vendor/original-theme.css` 维持原示例的布局外观；上游许可证随依赖保留。
 
 ## 核心实现优化（2026-10-24）
 
-具体修复、接口补充和兼容说明见 [CHANGELOG.md](CHANGELOG.md)。保留原演示主体与 CSS；[回归测试](tests/README.md) 可在本地运行。
+具体修复、接口补充和兼容说明见 [CHANGELOG.md](CHANGELOG.md)。保留原演示主体与 CSS。
